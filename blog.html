@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--BOOTSTRAP STYLING-->
+		<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+		<link rel="stylesheet" href="main.css">
+		<title>Blogg</title>
+	</head>
+
+	<body>
+  
+		<!--NAVIGATION BAR-->
+		<div class="nav">
+			<div class="container">
+				<ul class="pull-left">
+					<li><a href="about.html">Om mig</a></li>    
+					<li><a href="blog.html">Blogg</a></li>		  
+				</ul>
+					<ul class="pull-right">          
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contacts.html">Kontakter</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--MAIN BLOCK WITH LOGO AND IMAGE-->
+		<div class="jumbotron">
+			<div class="container">
+				<a href="main.html"><h1>Less is More. I am More.</h1></a>
+				<p>Webbdesign och webbutveckling av Katarina Chernyavskaya</p>      
+			</div>
+		</div> 
+		
+		<!--CONTEXT BLOCK-->
+		<div class="neighborhood-guides">
+			<div class="container">
+				<h2 class="center">Min resa till Island</h2>
+				<!-- BLOG SLIDER-->
+				<table align="center" border="0" cellpadding="0">
+					<tr>
+						<td width="100%"><img src="images/blog1.jpg" width="1000" height="667" name="photoslider"></td>
+					</tr>
+					<tr>
+						<td width="100%">
+							<form method="POST" name="rotater">
+								<div align="center">
+									<center><p>
+
+										<script language="JavaScript1.1">
+										var photos=new Array()
+										var text=new Array()
+										var which=0
+										var what=0
+
+										photos[0]="images/blog1.jpg"
+										photos[1]="images/blog2.jpg"
+										photos[2]="images/blog3.jpg"
+										photos[3]="images/blog4.jpg"
+										photos[4]="images/blog5.jpg"
+
+										text[0]="Till geyser, som mer eller mindre regelbundet kastar upp vatten"
+										text[1]="En stenfagel tittar pa havet..."
+										text[2]="Sno i juni? Men ar det sant!!!"
+										text[3]="Som pa Mars..."
+										text[4]="Mer vattnet!"
+
+
+										window.onload=new Function("document.rotater.description.value=text[0]")
+
+										function backward(){
+										if (which>0){
+										window.status=''
+										which--
+										document.images.photoslider.src=photos[which];
+										what--
+										document.rotater.description.value=text[what];
+										}
+										}
+
+										function forward(){
+										if (which<photos.length-1){
+										which++
+										document.images.photoslider.src=photos[which]
+										what++
+										document.rotater.description.value=text[what];
+										}
+										else window.status='End of gallery'
+										}
+
+										function type() {
+											alert("This textbox will only display default comments")
+										}
+										</script>
+										
+										<p><input type="text" name="description" class="blog_description" size="100" >
+
+										<p><input type="button" value="<<Tillbaka" name="B2" onClick="backward()"> 
+										<input type="button" value="Fram>>" name="B1" onClick="forward()"><br/>
+										<a href="#" onClick="which=1;what=1;backward();return false">Starta igen</a></p>
+									</center>
+								</div>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--FOOTER-->
+		<div class="learn-more">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>Webbdesign</h3>
+						<p>Layouts, UI&amp;UX design, redesign</p>
+						<p><a href="#">Titta p&aring; mer exempler</a></p>
+					</div>
+					<div class="col-md-4">
+						<h3>Webbutveckling</h3>
+						<p>Frameworks, scripts, layouts</p>
+						<p><a href="#">Titta p&aring; mer exempler</a></p>
+					</div>
+					<div class="col-md-4">
+						<h3>Grafisk design</h3>
+						<p>Logo, affish, corporate grafisk stil</p>
+						<p><a href="#">Titta p&aring; mer exempler</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
