@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+       
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+	<title>Portfolio</title>
+	
+	<!-- CAROUSEL LINK AND SCRIPT-->
+	<link rel="stylesheet" href="simplecarousel.css" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="simplecarousel.js">
+        </script>
+		
+          <script>
+          jQuery(function($){ // on DOM load
+
+	      mycarousel = new simplecarousel({
+		   id: 'mycarousel',
+		   url: 'carouselcontent.htm'
+	       })
+
+        })
+
+          </script>
+    
+    </head>
+
+  <body>
+  
+  <!--NAVIGATION BAR-->
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="about.html">Om mig</a></li>    
+          <li><a href="blog.html">Blogg</a></li>		  
+        </ul>
+        <ul class="pull-right">          
+          
+          <li><a href="portfolio.html">Portfolio</a></li>
+		  <li><a href="contacts.html">Kontakter</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--MAIN BLOCK WITH LOGO AND IMAGE-->
+    <div class="jumbotron">
+    
+      <div class="container">
+         <a href="main.html"><h1>Less is More. I am More.</h1></a>
+        <p>Webbdesign och webbutveckling av Katarina Chernyavskaya</p>      
+      </div>
+    </div> 
+
+	<!-- CAROUSEL-->
+	<div class="neighborhood-guides">
+    <div class="container">
+      <div class="carousel" id="mycarousel">
+        <div class="belt">
+        </div>
+     </div>
+     </div>
+    </div>
+    
+    <!--FOOTER-->
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>Webbdesign</h3>
+			<p>Layouts, UI&amp;UX design, redesign</p>
+			<p><a href="#">Titta p&aring; mer exempler</a></p>
+	      </div>
+		  <div class="col-md-4">
+			<h3>Webbutveckling</h3>
+			<p>Frameworks, scripts, layouts</p>
+			<p><a href="#">Titta p&aring; mer exempler</a></p>
+		  </div>
+		  <div class="col-md-4">
+			<h3>Grafisk design</h3>
+			<p>Logo, affish, corporate grafisk stil</p>
+			<p><a href="#">Titta p&aring; mer exempler</a></p>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+	
+  </body>
+</html>

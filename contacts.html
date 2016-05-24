@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+    <!--BOOTSTRAP STYLING--> 
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+	<title>Kontakter</title>
+    
+  </head>
+
+  <body>
+  
+   <!--NAVIGATION BAR-->
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="about.html">Om mig</a></li>    
+          <li><a href="blog.html">Blogg</a></li>		  
+        </ul>
+        <ul class="pull-right">          
+          
+          <li><a href="portfolio.html">Portfolio</a></li>
+		  <li><a href="contacts.html">Kontakter</a></li>
+        </ul>
+      </div>
+    </div>
+
+	<!--MAIN BLOCK WITH LOGO AND IMAGE-->
+    <div class="jumbotron">
+    
+      <div class="container">
+        <a href="main.html"><h1>Less is More. I am More.</h1></a>
+        <p>Ny strategi f&ouml;r Internet och manniskor av Katarina Chernyavskaya</p>      
+      </div>
+    </div> 
+
+	<!--CONTEXT BLOCK-->
+    <div class="neighborhood-guides">
+     <div id="w">
+        <h1>Skicka ett meddelande till mig!</h1>
+    <form id="contactform" name="contact" method="post" action="#">
+      <p class="note"><span class="req">*</span> Obligatoriskt</p>
+    <div class="row">
+    <label for="name">Ditt namn <span class="req">*</span></label>
+    <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Steve Jobs" required>
+     </div>
+
+    <div class="row">
+      <label for="email"> Ditt e-mail<span class="req">*</span></label>
+      <input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="address@gmail.com" required>
+    </div>
+
+     <div class="row">
+       <label for="subject">&Auml;mne <span class="req">*</span></label>
+       <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="Vad vill di skriva om?" required>
+     </div>
+
+     <div class="row">
+       <label for="message">Meddelande <span class="req">*</span></label>
+       <textarea name="message" rows="6"  id="message" class="txtarea" tabindex="4" placeholder="Du &auml;r snille!" required></textarea>
+     </div>
+
+      <div class="center">
+        <input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="Skicka">
+     </div>
+  </form>
+   </div>
+    </div>
+    
+	<!--FOOTER-->
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>Webbdesign</h3>
+			<p>Layouts, UI&amp;UX design, redesign</p>
+			<p><a href="#">Titta p&aring; mer exempler</a></p>
+	      </div>
+		  <div class="col-md-4">
+			<h3>Webbutveckling</h3>
+			<p>Frameworks, scripts, layouts</p>
+			<p><a href="#">Titta p&aring; mer exempler</a></p>
+		  </div>
+		  <div class="col-md-4">
+			<h3>Grafisk design</h3>
+			<p>Logo, affish, corporate grafisk stil</p>
+			<p><a href="#">Titta p&aring; mer exempler</a></p>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+  </body>
+</html>
